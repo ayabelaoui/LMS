@@ -54,6 +54,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CreateUserComponent } from './views/user-view/create-user/create-user.component';
 import { ProfileUserComponent } from './views/profile-view/profile-user/profile-user.component';
 import { DatePipe } from '@angular/common';
+import { HolidaysViewComponent } from './views/holidays-view/holidays-view.component';
 
 @NgModule({
   declarations: [
@@ -92,6 +93,7 @@ import { DatePipe } from '@angular/common';
     LeaverequestListComponent,
     CreateUserComponent,
     ProfileUserComponent,
+    HolidaysViewComponent,
   ],
   imports: [
     MatIconModule,

@@ -21,6 +21,7 @@ import { QuotaListComponent } from './views/quota-view/quota-list/quota-list.com
 import { UserDashboardComponent } from './views/user-dashboard/user-dashboard.component';
 import { LeaverequestListComponent } from './views/leaveRequest-view/leaverequest-list/leaverequest-list.component';
 import { ProfileUserComponent } from './views/profile-view/profile-user/profile-user.component';
+import { HolidaysViewComponent } from './views/holidays-view/holidays-view.component';
 const routes: Routes = [
   //{ path: '', redirectTo: 'login', pathMatch: 'full' },
   
@@ -31,7 +32,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path :"404", component : NotAuthComponent},
   { path: 'login', component: LoginComponent },
-  { path: 'holiday', component: HolidaysComponent , canActivate : [AuthenticationGuard]},
+  { path: 'holidaysss', component: HolidaysComponent , canActivate : [AuthenticationGuard]},
   { path: 'register', component: RegistrationComponent },
   {path:"rh",component:RhDashboardComponent , canActivate : [AuthenticationGuard],
   children : [
@@ -43,7 +44,7 @@ const routes: Routes = [
   { path: 'leavetypes', component: LeaveTypeListComponent ,canActivate : [AuthorizationGuard], data : {role : "ROLE_RH"}},
   { path: 'users', component: UserListComponent ,canActivate : [AuthorizationGuard], data : {role : "ROLE_RH"}},
   { path: 'leavequota', component: QuotaListComponent ,canActivate : [AuthorizationGuard], data : {role : "ROLE_RH"}},
-
+  { path: 'holiday', component: HolidaysViewComponent }, 
 
 
   ]},

@@ -42,10 +42,10 @@
 	<!-- Collection of nav links, forms, and other content for toggling -->
 	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
 		<div class="navbar-nav">
-			    <ul class="navbar-nav mr-auto" routerLinkActive="active">
-
-			<button class="nav-item nav-link " mat-button>MON CALENDRIER</button>
-			<button class="nav-item nav-link " mat-button>CALENDRIER DE L'ENTREPRISE</button>
+		<ul class="navbar-nav mr-auto" routerLinkActive="active">
+		 	<a href="/holiday" class="nav-link" routerLink="holiday">Jours Fériés</a>
+			<!--<button class="nav-item nav-link " mat-button>MON CALENDRIER</button>
+			<button class="nav-item nav-link " mat-button>CALENDRIER DE L'ENTREPRISE</button>-->
 			<li class="nav-item" *ngIf="showAdminBoard">
 				<a href="/admin" class="nav-link" routerLink="admin">RH Board</a>
 			  </li>
@@ -53,7 +53,7 @@
 			  <li class="nav-item">
 				<a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">User</a>
 			  </li>
-			</ul>
+		</ul>
 		
 			<ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
 			  <li class="nav-item">
